@@ -1,0 +1,28 @@
+{
+  "name": "Api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js app.js",
+    "dev": "env-cmd ./config/dev.env nodemon",
+    "test": "env-cmd ./config/test.env jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "jest": "^26.6.3",
+    "mongoose": "^5.12.2",
+    "superset": "^2.0.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "supertest": "^6.1.3"
+  }
+}
